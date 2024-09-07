@@ -10,7 +10,7 @@ if(suaPesquisa !=="") {
 for (let copa of copas) {
     titulo = copa.titulo.toLowerCase()
     tags = copa.tags.toLowerCase()
-    if (titulo.includes(suaPesquisa)){
+    if (titulo.includes(suaPesquisa) || tags.includes(suaPesquisa)){
     resultado += `
     <div class="item-resultado">
                 <h2>${copa.titulo}
@@ -68,7 +68,7 @@ for (let copa of copas) {
 for (let copa of copaTRI) {
     titulo = copa.titulo.toLowerCase()
     tags = copa.tags.toLowerCase()
-    if (copa.titulo.includes(suaPesquisa)){
+    if (copa.titulo.includes(suaPesquisa) || tags.includes(suaPesquisa)){
     resultado +=
 `
 <div class="item-resultado">
@@ -126,7 +126,7 @@ for (let copa of copaTRI) {
 for (let copa of copaTetra) {
     titulo = copa.titulo.toLowerCase()
     tags = copa.tags.toLowerCase()
-    if (copa.titulo.includes(suaPesquisa)){
+    if (copa.titulo.includes(suaPesquisa) || tags.includes(suaPesquisa)){
     resultado +=
 `
 <div class="item-resultado">
@@ -186,7 +186,7 @@ for (let copa of copaTetra) {
 for (let copa of copaPenta) {
     titulo = copa.titulo.toLowerCase()
     tags = copa.tags.toLowerCase()
-    if(copa.titulo.includes(suaPesquisa)){
+    if(copa.titulo.includes(suaPesquisa) || tags.includes(suaPesquisa)){
     resultado +=
 `
 <div class="item-resultado">
